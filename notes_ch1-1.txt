@@ -1,0 +1,13 @@
+applicative order vs normal order--
+    (see 1.1.3) applicative order evaluation--
+        1. evaluate the subexpressions of the combination
+        2. apply the procedure that is the value of the operator to the values of the operands
+    (1.1.5) normal order evaluation--
+        1. substitute operand expressions for parameters until you obtain an expression
+           of only primitive operands
+        2. evaluate the subexpressions of the combination
+NB: Scheme uses applicative-order evaluation
+
+1.1.7--
+    "In mathematics we are usually concerned with declarative (what is) descriptions, whereas
+     in computer science we are usually concerned with imperative (how to) descriptions."
