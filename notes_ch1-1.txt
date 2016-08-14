@@ -11,3 +11,20 @@ NB: Scheme uses applicative-order evaluation
 1.1.7--
     "In mathematics we are usually concerned with declarative (what is) descriptions, whereas
      in computer science we are usually concerned with imperative (how to) descriptions."
+
+1.1.8 PROCEDURES AS BLACK-BOX ABSTRACTIONS--
+    recursive
+    procedural decomposition -> take a complex task and split into smaller self-contained tasks
+
+    nearly like a systems approach -> don't care what the "square" or "good enough" box does at
+    the beginning. finish those later.
+
+    NB: You can write functions in .scm files that occur after their use in an another func.
+
+    "A procedure definition should be able to suppress detail" -> appropriate level abstraction
+   
+   Block structure: sqrt approximations' other functions req'd. to run can be defined
+                    inside the sqrt function.
+   Lexical Scoping: since sqrt takes x as only argument, and all the other functions need x,
+                    we don't have to include x in the definition of each function, can use
+                    x as a 'free' variable

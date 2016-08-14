@@ -1,0 +1,18 @@
+1.2.1 linear recursion and iteration--
+    linear recursive process (not recursive procedure necessarily! procedure refers to how the 
+    syntax is written and process refers to how the process evolves.)
+        eg. factorial n! can be written as n*(n-1)! until n = 1, n! = 1
+        so if you visualize how the LISP interpreter reads it it'll look like an expansion
+        out to all the terms in multiplication, and then a contraction till you get the ans.
+    
+    linear iterative process
+        eg. product = counter * product; counter++, when counter > n, n! = product
+        only iterates up.
+
+    note: any recursive procedure in most languages will cause memory used to grow as procedure
+          calls increase. Scheme is tail-recursive -- meaning "it will execute an iterative
+          process in constant space, even if the iterative process is described by a recursive
+          procedure"
+        note 2: SICP doesn't say a tail-recursive language has to do this for a
+                recursive-process recursive-procedure, just with an
+                iterative-process recursive-procedure.
