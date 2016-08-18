@@ -16,3 +16,6 @@
         note 2: SICP doesn't say a tail-recursive language has to do this for a
                 recursive-process recursive-procedure, just with an
                 iterative-process recursive-procedure.
+
+1.2.2 tree recursion--
+	like the fibonacci sequence generation
